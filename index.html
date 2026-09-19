@@ -51,6 +51,44 @@
             pointer-events: none;
         }
 
+        /* Top-right corner brand badge */
+        .top-brand {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 10px 15px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(5px);
+            transition: all 0.3s ease;
+        }
+
+        .top-brand:hover {
+            background: rgba(0, 0, 0, 0.8);
+            transform: scale(1.05);
+        }
+
+        .top-brand img {
+            width: 45px;
+            height: 45px;
+            object-fit: contain;
+            border-radius: 10px;
+            margin-bottom: 5px;
+        }
+
+        .top-brand span {
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: bold;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+        }
+
         /* Center content container */
         .content {
             position: relative;
@@ -99,7 +137,7 @@
             gap: 10px;
         }
 
-        /* Different gradient for mobile button to look distinct */
+        /* Different gradient for mobile button */
         .download-btn.mobile {
             background: linear-gradient(135deg, #f12711, #f5af19);
             box-shadow: 0 10px 25px rgba(241, 39, 17, 0.4);
@@ -112,6 +150,12 @@
     </style>
 </head>
 <body>
+
+    <!-- Top Right Brand / Logo Link -->
+    <a href="https://itsalikohan.github.io/herobrinecraft/" class="top-brand" target="_blank">
+        <img src="87.png" alt="Herobrine Craft Logo">
+        <span>هیروبراین کرفت</span>
+    </a>
 
     <!-- Background Image Container -->
     <div class="bg-container">
@@ -127,13 +171,13 @@
         <h1 class="game-title">CecilHotel</h1>
         
         <div class="buttons-container">
-            <!-- PC Download Link -->
-            <a href="CecilHotel-PC.zip" class="download-btn">
+            <!-- PC Download Link (MediaFire) -->
+            <a href="https://download1592.mediafire.com/lqvms9mlnhoghGregvmjjj04iND2Ok6V3Mkmu7ATpCNeALlodvoMjVepak9vijPhwuuPYsbDQt-unEay0guNzKSA-Ld-84vrrDVQn_TujmRETWah2CL418Dzmv79n7agzQKMDNenp23kkiaQNNZb8PZ6olSaRiorrgM0EEjkhC_cEtk/a6ehlo68u67qaql/CecilHotel.zip" class="download-btn" target="_blank">
                 💻 Download for PC
             </a>
             
-            <!-- Mobile Download Link -->
-            <a href="CecilHotel-Mobile.apk" class="download-btn mobile">
+            <!-- Mobile Download Link (MediaFire) -->
+            <a href="https://download1591.mediafire.com/518s0mquqd1gHiSchC55IA83FfGI5AFxuxwRRQj6Wm0ZxVrfdYXr37gPzU9A1KBvAo0_t9WrDHGbOOJ77uNk6ow76SBgHBa9zLDN3uOz1uD-3Ie5FvKJ8lHkdy_3T-5NFGbUZOAIg1IiAOBS3G6xQzfVIB9-Il3JI-ejHmCEB3MzaQQ/z2xpjxoactw5823/cecilhotel.apk" class="download-btn mobile" target="_blank">
                 📱 Download for Mobile
             </a>
         </div>
